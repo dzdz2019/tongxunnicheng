@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+<TextView
+    android:id="@+id/pop_daofu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:gravity="center"
+    android:textColor="@color/c333333"
+    android:textSize="@dimen/text_12"
+    android:text="到付"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/c999999"/>
+    <TextView
+        android:id="@+id/pop_baoyou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textColor="@color/c333333"
+        android:textSize="@dimen/text_12"
+        android:layout_marginBottom="10dp"
+        android:text="包邮"/>
+</LinearLayout>

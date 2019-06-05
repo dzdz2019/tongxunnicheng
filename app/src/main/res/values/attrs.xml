@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WaterDropView">
+        <attr name="max_circle_radius" format="dimension" />
+        <attr name="min_circle_radius" format="dimension" />
+        <attr name="waterdrop_color" format="color" />
+        <attr name="topcircle_x" format="dimension" />
+        <attr name="topcircle_y" format="dimension" />
+        <attr name="bottomcircle_x" format="dimension" />
+        <attr name="bottomcircle_y" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+
+    <!--垂直跑马灯-->
+    <declare-styleable name="MarqueeViewStyle">
+        <attr name="mvInterval" format="integer|reference" />
+        <attr name="mvAnimDuration" format="integer|reference" />
+        <attr name="mvTextSize" format="dimension|reference" />
+        <attr name="mvTextColor" format="color|reference" />
+        <attr name="mvSingleLine" format="boolean" />
+        <attr name="mvGravity">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ProgressWheel">
+        <attr name="pwText" format="string" />
+        <attr name="pwTextColor" format="color" />
+        <attr name="pwTextSize" format="dimension" />
+        <attr name="pwBarColor" format="color" />
+        <attr name="pwRimColor" format="color" />
+        <attr name="pwRimWidth" format="dimension" />
+        <attr name="pwSpinSpeed" format="integer" />
+        <attr name="pwCircleColor" format="color" />
+        <attr name="pwRadius" format="dimension" />
+        <attr name="pwBarWidth" format="dimension" />
+        <attr name="pwBarLength" format="dimension" />
+        <attr name="pwDelayMillis" format="dimension" />
+        <attr name="pwContourColor" format="color" />
+        <attr name="pwContourSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="StickNavLayout">
+        <!--默认是否悬停tab-->
+        <attr name="isStickNav" format="boolean" />
+        <!--距离悬浮的位置-->
+        <attr name="stickOffset" format="dimension" />
+    </declare-styleable>
+
+    <!--MyMoneyProgress 的组件-->
+    <declare-styleable name="CircleProgressView">
+        <attr name="mMaxProgress" format="float" />
+        <attr name="mProgress" format="float" />
+        <attr name="mCircleLineStrokeWidth" format="integer" />
+        <attr name="mTxtStrokeWidth" format="integer" />
+        <attr name="backgroundColor" format="integer" />
+        <attr name="surfaceColor" format="integer" />
+    </declare-styleable>
+    <!--圆形图片-->
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness_round" format="integer" />
+        <attr name="border_outside_color_round" format="color" />
+        <attr name="border_inside_color_round" format="color" />
+    </declare-styleable>
+    <!--wheelView-->
+    <declare-styleable name="MyWheelView">
+        <attr name="wheelviewTextSize" format="dimension" />
+    </declare-styleable>
+    <!--Gif图-->
+    <!--<declare-styleable name="GifView">-->
+    <!--<attr name="gif" format="reference" />-->
+    <!--<attr name="paused" format="boolean" />-->
+    <!--</declare-styleable>-->
+    <!--<declare-styleable name="CustomTheme">-->
+    <!--<attr name="gifViewStyle" format="reference" />-->
+    <!--</declare-styleable>-->
+    <!--<style name="Widget_GifView"></style>-->
+
+    <!--首页轮播图-->
+    <declare-styleable name="Lanner">
+        <attr name="delayTime" format="integer"></attr>
+        <attr name="scrollerDuration" format="integer"></attr>
+        <attr name="dotsSelectedIcon" format="reference"></attr>
+        <attr name="dotsUnSelectedIcon" format="reference"></attr>
+    </declare-styleable>
+    <!--corner_color 边角颜色，
+            scanner_color 扫描线颜色
+            possible_result_color 扫描点颜色
+            frame_color 扫描框边线颜色
+            mask_color 模糊区域颜色
+            label_text  框上方提示
+        -->
+    <declare-styleable name="ViewfinderView">
+        <attr name="corner_color" format="color"/>
+        <attr name="laser_color" format="color"/>
+        <attr name="frame_color" format="color" />
+        <attr name="mask_color" format="color" />
+        <attr name="result_point_color" format="color"/>
+        <attr name="result_color" format="color" />
+        <attr name="label_text_color" format="color"/>
+        <attr name="label_text" format="string"/>
+        <attr name="label_text_size" format="float"/>
+    </declare-styleable>
+</resources>

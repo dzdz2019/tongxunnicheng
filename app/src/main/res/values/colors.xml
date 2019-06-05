@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="zhuse">#FF5201</color>
+    <color name="white">#ffffff</color>
+    <color name="touwhite">#70ffffff</color>
+
+    <color name="touhui">#50999999</color>
+    <color name="c666666">#666666</color>
+    <color name="c333333">#333333</color>
+
+    <color name="c50333333">#90333333</color>
+    <color name="c999999">#999999</color>
+    <color name="dise">#F3F3F3</color>
+    <color name="cFF9000">#FF9000</color>
+    <color name="cFFD4D4D4">#FFD4D4D4</color>
+    <color name="bocop_dialog_b">#00ffffff</color>
+
+    <color name="date_picker_bg">#FFFFFF</color>
+    <color name="date_picker_divider">#11112233</color>
+    <color name="date_picker_text_light">#9C386A</color>
+    <color name="date_picker_text_dark">#333333</color>
+</resources>

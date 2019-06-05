@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp"
+    tools:context=".liaotian.adapter.HuiHuaJiLuAdapter">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:paddingTop="5dp"
+    android:orientation="horizontal"
+  >
+    <tongxun.zhy.dz.com.tongxun.tools.CircleImageView
+        android:id="@+id/mIvliaotianada_img"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/touxiang"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:id="@+id/mTvliaotianada_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="@dimen/text_15"
+            android:textColor="@color/c333333"
+            android:text="土豆土豆俺是地瓜"/>
+        <TextView
+            android:id="@+id/mTvliaotianada_neirong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/text_13"
+            android:textColor="@color/c999999"
+            android:text="收到了么？我要吃薯条，非油炸你信么，，，，，，"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="2019-09-09"
+        android:visibility="gone"
+        android:textColor="@color/c999999"
+        android:textSize="@dimen/text_12"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+        <TextView
+            android:id="@+id/mTvliaotianada_num"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_9"
+            android:text="1"
+            android:visibility="gone"
+            android:gravity="center"
+            android:background="@drawable/yjzhusequand"
+            android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

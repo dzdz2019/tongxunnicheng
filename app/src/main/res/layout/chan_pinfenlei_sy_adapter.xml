@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".shouye.adapter.ChanPinfenleiSyAdapter">
+<TextView
+    android:id="@+id/mTvfenlei_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/text_15"
+    android:textColor="@color/zhuse"
+    android:text="平板"/>
+    <View
+        android:id="@+id/mVfenlei_name"
+        android:layout_width="31dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/zhuse"/>
+</LinearLayout>

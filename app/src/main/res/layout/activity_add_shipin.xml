@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dise"
+    android:orientation="vertical"
+    tools:context=".shipin.AddShipin">
+
+    <include layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="13dp"
+                android:paddingTop="17dp"
+                android:paddingRight="13dp"
+                android:paddingBottom="17dp">
+
+                <ImageView
+                    android:id="@+id/mIvaddvideo_video"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:src="@mipmap/chuanshipingimg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="温馨提示："
+                        android:textColor="@color/zhuse"
+                        android:textSize="@dimen/text_12" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:text="按规范上传视频，有助您快速通过审核！请点击右上\n角“视频规范查看"
+                        android:textColor="@color/zhuse"
+                        android:textSize="@dimen/text_10" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/mEtaddvideo_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="标题  品牌型号都是常用搜索关键字"
+                    android:padding="3dp"
+                    android:textColor="@color/c333333"
+                    android:textColorHint="@color/c999999"
+                    android:textSize="9sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/c999999" />
+
+                <EditText
+                    android:id="@+id/mEtaddvideo_jianjie"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/white"
+                    android:gravity="top"
+                    android:hint="介绍下视频技术点，更能吸引用户购买观看哟~"
+                    android:padding="3dp"
+                    android:textColor="@color/c333333"
+                    android:textColorHint="@color/c999999"
+                    android:textSize="9sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:text="选择视频分类"
+                android:textColor="@color/c999999"
+                android:textSize="@dimen/text_9" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <GridView
+                        android:id="@+id/mGvaddvideo_grideview"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@color/white"
+                        android:numColumns="auto_fit"
+                        android:padding="5dp"
+                        android:verticalSpacing="10dp"></GridView>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/mTvaddvideo_mianfei"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/yjzhusequand"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="免费"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_14" />
+
+                    <TextView
+                        android:id="@+id/mTvaddvideo_shoufei"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="自由定价"
+                        android:textColor="@color/c333333"
+                        android:textSize="@dimen/text_14" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/mTvaddvideo_mianfeicon"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:text="分享是最好的学习，感谢你的贡献"
+                    android:textColor="@color/c333333"
+                    android:textSize="@dimen/text_14"></TextView>
+
+                <LinearLayout
+                    android:id="@+id/mLnaddvideo_soufeicon"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/mEtaddvideo_shoufei"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:padding="3dp"
+                        android:gravity="center"
+                        android:hint="￥0"
+                        android:maxLength="9"
+                        android:inputType="number"
+                        android:digits="0.123456789"
+                        android:textColor="@color/zhuse"
+                        android:textSize="@dimen/tezt_18" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="元"
+        android:layout_marginRight="30dp"
+        android:textSize="@dimen/tezt_18"
+        android:textColor="@color/zhuse"/>
+</LinearLayout>
+                    <View
+                        android:layout_width="400dp"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/c999999" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/mTvaddvideo_shangchuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/yjzhusequand"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="确认上传"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击确认发布，即表示已阅读同意"
+                    android:textColor="@color/c999999"
+                    android:textSize="@dimen/text_10" />
+
+                <TextView
+                    android:id="@+id/mTvaddvideo_xieyi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上传协议"
+                    android:textColor="@color/zhuse"
+                    android:textSize="@dimen/text_10" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

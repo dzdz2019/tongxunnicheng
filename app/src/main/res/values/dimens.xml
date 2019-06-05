@@ -1,0 +1,24 @@
+<resources>
+    <dimen name="text_9">9sp</dimen>
+    <dimen name="text_10">10sp</dimen>
+    <dimen name="text_11">11sp</dimen>
+    <dimen name="text_12">12sp</dimen>
+    <dimen name="text_13">13sp</dimen>
+    <dimen name="text_14">14sp</dimen>
+    <dimen name="text_15">15sp</dimen>
+    <dimen name="text_16">16sp</dimen>
+    <dimen name="text_17">17sp</dimen>
+    <dimen name="tezt_18">18sp</dimen>
+    <dimen name="text_20">20sp</dimen>
+    <dimen name="text_22">22sp</dimen>
+    <dimen name="text_25">25sp</dimen>
+    <dimen name="text_30">30sp</dimen>
+    <dimen name="text_35">35sp</dimen>
+
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="picker_view_height">160dp</dimen>
+    <dimen name="date_unit_text_size">18sp</dimen>
+
+    <dimen name="live_btn_sizes">35dp</dimen>
+</resources>

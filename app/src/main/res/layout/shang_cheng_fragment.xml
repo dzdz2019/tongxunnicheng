@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".shangcheng.ShangChengFragment">
+
+    <com.mbg.library.RefreshRelativeLayout
+        android:id="@+id/mRlshangcheng_shugxin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <tongxun.zhy.dz.com.tongxun.tools.ObservableScrollView
+            android:id="@+id/mSvshangcheng_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/mBnshangcheng_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp">
+
+                </com.youth.banner.Banner>
+
+                <tongxun.zhy.dz.com.tongxun.tools.MyGridview
+                    android:id="@+id/mGvshangcheng_fenlei"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:numColumns="5"
+                    android:verticalSpacing="15dp">
+
+                </tongxun.zhy.dz.com.tongxun.tools.MyGridview>
+
+                <GridView
+                    android:id="@+id/mGvshangcheng_fenleiss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:numColumns="5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"></GridView>
+
+                <tongxun.zhy.dz.com.tongxun.tools.MyGridview
+                    android:id="@+id/mGvshangcheng_shanpin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="4dp"
+                    android:numColumns="2"
+                    android:verticalSpacing="10dp"></tongxun.zhy.dz.com.tongxun.tools.MyGridview>
+            </LinearLayout>
+        </tongxun.zhy.dz.com.tongxun.tools.ObservableScrollView>
+    </com.mbg.library.RefreshRelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mIvshangcheng_car"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/yuanzhuse">
+
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/shopcar" />
+        <TextView
+            android:id="@+id/mTvshangcheng_carnum"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/text_10"
+            android:textColor="@color/white"
+            android:text="0"
+            android:gravity="center"
+            android:background="@drawable/yuanhongsequan" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/mLnmain_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mTvmain_top"
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:paddingBottom="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/yjhuiseouquan"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:src="@mipmap/sousuo" />
+
+                    <TextView
+                        android:id="@+id/toptext"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="left|center"
+                        android:paddingLeft="10dp"
+                        android:text="@string/sousuonixihuandeshangpin"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_10" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/mIvmain_jia"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/shopfabu" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
